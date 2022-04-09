@@ -89,6 +89,7 @@
   <ItemGroup>
     <CudaCompile Include="kernel.cu" />
     <CudaCompile Include="PIPO.cu" />
+    <CudaCompile Include="PIPO_reference.cu" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PIPO.cuh" />
