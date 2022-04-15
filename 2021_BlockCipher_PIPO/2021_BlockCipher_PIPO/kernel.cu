@@ -185,12 +185,12 @@ void GPU_PIPO_reference_performance_analysis(unsigned int Blocksize, unsigned in
 int main()
 {
 	srand(time(NULL));
-	GPU_PIPO_performance_analysis(8192, 256);
-	GPU_PIPO_performance_analysis(8192, 512);
-	GPU_PIPO_performance_analysis(16384, 512);
-	GPU_PIPO_performance_analysis(8192, 1024);
-	GPU_PIPO_performance_analysis(16384, 1024);
-	GPU_PIPO_performance_analysis(32768, 1024);
+	//GPU_PIPO_performance_analysis(8192, 256);
+	//GPU_PIPO_performance_analysis(8192, 512);
+	//GPU_PIPO_performance_analysis(16384, 512);
+	//GPU_PIPO_performance_analysis(8192, 1024);
+	//GPU_PIPO_performance_analysis(16384, 1024);
+	//GPU_PIPO_performance_analysis(32768, 1024);
 	//REF
 	//GPU_PIPO_reference_performance_analysis(8192, 256);
 	//GPU_PIPO_reference_performance_analysis(8192, 512);
@@ -199,5 +199,29 @@ int main()
 	//GPU_PIPO_reference_performance_analysis(16384, 1024);
 	//GPU_PIPO_reference_performance_analysis(32768, 1024);
 
+	//32MB Test
+	GPU_PIPO_performance_analysis(65536, 32);
+	GPU_PIPO_performance_analysis(32768, 64);
+	GPU_PIPO_performance_analysis(16384, 128);
+	GPU_PIPO_performance_analysis(8192, 256);
+	GPU_PIPO_performance_analysis(4096, 512);
+	GPU_PIPO_performance_analysis(2048, 1024);
+	
+	//64MB Test
+	GPU_PIPO_performance_analysis(65536, 64);
+	GPU_PIPO_performance_analysis(32768, 128);
+	GPU_PIPO_performance_analysis(16384, 256);
+	GPU_PIPO_performance_analysis(8192, 512);
+	GPU_PIPO_performance_analysis(4096, 1024);
 
+	//128MB Test
+	GPU_PIPO_performance_analysis(65536, 128);
+	GPU_PIPO_performance_analysis(32768, 256);
+	GPU_PIPO_performance_analysis(16384, 512);
+	GPU_PIPO_performance_analysis(8192, 1024);
+
+	//256MB Test
+	GPU_PIPO_performance_analysis(65536, 256);
+	GPU_PIPO_performance_analysis(32768, 512);
+	GPU_PIPO_performance_analysis(16384, 1024);
 }
